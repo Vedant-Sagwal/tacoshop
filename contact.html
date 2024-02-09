@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vedant Sagwal">
+    <meta name="description" content="Contact LTS here">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="images/taco_shop.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contact US</h1>
+        <aside>
+            <details>
+                <summary>Index</summary>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#aboutLTS">About <abbr title="Little Taco Shop">LTS</abbr></a></li>
+                        <li><a href="index.html#menu">Our Menu</a></li>
+                        <li><a href="hours.html">Store Hours</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </aside>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Send Us a Message</legend>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John" required>
+                </p>
+                <p>
+                    <label for="phone">Phone No.</label>
+                    <input type="tel" name="phone" id="phone" placeholder="1234567890" required pattern="[0-9]{10}">
+                </p>
+                <p>
+                    <label for="mail">E-mail</label>
+                    <input type="email" name="mail" id="mail" placeholder="abc@email.com" reqiured>
+                </p>
+                <p>Your message:
+                    <br>
+                <textarea name="message" id="message" cols="30" rows="10">Enter your Message</textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <h2>Our Location</h2>
+        <p>
+            <address>Avenida del Pato #200 Apt 8
+                Colonia del Valle
+                Querétaro, QRO 83654
+                Mexico</address>
+        </p>
+        <p>E-mail:
+            <a href="mailto:littletacoshop@email.com">littletacoshop@email.com</a>
+        </p>
+        <p>
+            Phone:
+            <a href="tel:9898985454">9898985454</a>
+        </p>
+        <p><a href="#">Back To Top</a></p>
+    </footer>
+</body>
+</html>
